@@ -3,12 +3,12 @@
   <nav class="nav">
     <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#"> <img class="img-thumbnail" src="../assets/Group35.png" alt=""></a>
+    <a class="nav-link active" aria-current="page" target="_blank" href="#"> <img class="img-thumbnail" src="../assets/Group35.png" alt=""></a>
   </li>
     </ul>
  <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+    <a class="nav-link active" aria-current="page" href="#"><router-link to="/user">Главная</router-link> </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Новости</a>
@@ -276,9 +276,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 .nav-link:hover{
   color: #31efecdd;
   transition: 0.6s ease-in;
+}
+.nav-link{
+  text-decoration: none;
 }
 li{
   color: #444444;
@@ -487,6 +491,9 @@ color: #000000;
   .grid.text-center{
     flex-direction:column;
     justify-content: center;
+  }
+  .nav-link{
+    text-decoration: none;
   }
   a{
     text-decoration: none;
